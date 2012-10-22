@@ -104,7 +104,7 @@ imap <F1>           <Nop>
 map <Leader><Leader> :!
 
 " AckGrep current word
-map <leader>a :call AckGrep()<CR>
+map <leader>a :Ack! <C-R><C-W> 
 " AckVisual current selection
 vmap <leader>a :call AckVisual()<CR>
 
