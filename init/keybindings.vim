@@ -113,3 +113,23 @@ nmap du :diffupdate<CR>
 
 " Gundo.vim
 map <leader>u :GundoToggle<CR>
+
+" Open search files without opening the file with the first match
+map <D-F> :Ack!
+
+" Format the entire file
+map <D-L> gg=G<CR>''z.
+
+
+" convert Ruby 1.8 to 1.9 hash syntax
+map <D-H> :%s/:\([^ ]*\)\(\s*\)=>/\1:/gc<CR>
+
+
+" make all operations work with the OS clipboard.
+set clipboard=unnamed
+
+" jump between windows
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-h> <C-w>h
+map <C-l> <C-w>l
