@@ -26,7 +26,7 @@ let g:colors_name = "railscasts"
 " Light Green  #A5C261
 " Tan          #FFC66D
 
-hi Normal                    guifg=#E6E1DC guibg=#000000
+hi Normal                    guifg=#E6E1DC guibg=#222222
 hi Cursor                    guibg=#FFFFFF
 hi CursorLine                guibg=#333435
 hi LineNr                    guifg=#888888 guibg=#222222
