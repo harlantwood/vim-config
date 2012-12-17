@@ -83,9 +83,9 @@ map <leader>T   :!rails runner 'puts $LOAD_PATH.join(" ")' \| xargs rdoc -f tags
 map <leader>g   :Gblame<CR>
 
 " Comment/uncomment lines
-map <leader>/   <plug>NERDCommenterToggle
-map <D-/>       <plug>NERDCommenterToggle
-imap <D-/>      <Esc><plug>NERDCommenterToggle i
+map <leader>/   <plug>NERDCommenterToggle<CR>
+map <D-/>       <plug>NERDCommenterToggle<CR>
+imap <D-/>      <Esc><plug>NERDCommenterToggle<CR>i
 
 " In command-line mode, <C-A> should go to the front of the line, as in bash.
 cmap <C-A> <C-B>
@@ -117,13 +117,8 @@ map <leader>u :GundoToggle<CR>
 " Open search files without opening the file with the first match
 map <D-F> :Ack!
 
-" Format the entire file
-map <D-L> gg=G<CR>''z.
-
-
 " convert Ruby 1.8 to 1.9 hash syntax
 map <D-H> :%s/:\([^ ]*\)\(\s*\)=>/\1:/gc<CR>
-
 
 " make all operations work with the OS clipboard.
 set clipboard=unnamed
@@ -133,3 +128,6 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-h> <C-w>h
 map <C-l> <C-w>l
+
+" format JSON using Python's json.tool module
+map <leader>x :%!python -m json.tool<CR>
