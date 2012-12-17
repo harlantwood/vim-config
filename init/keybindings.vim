@@ -131,3 +131,11 @@ map <C-l> <C-w>l
 
 " format JSON using Python's json.tool module
 map <leader>x :%!python -m json.tool<CR>
+
+" map for resizing windows
+if bufwinnr(1)
+  map + <C-W>+
+  map - <C-W>-
+  map ( <C-W><
+  map ) <C-W>>
+end
